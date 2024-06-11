@@ -1,0 +1,38 @@
+.wrapper {
+  height: 100vh;
+  width: 350px;
+  background-color: lightcyan;
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.sidebar_content::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  display: none;
+  transition: all 1s ease;
+}
+
+.sidebar_content:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.sidebar_content::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  border-radius: var(--radius);
+}
+
+.sidebar_header,
+.sidebar_footer {
+  padding: 50px;
+  background-color: lightpink;
+}
