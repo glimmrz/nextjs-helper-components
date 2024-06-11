@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Mono({ subsets: ["latin"], weight: ["400", "600"] });
 
 export const metadata = {
   title: "Next js helper components",

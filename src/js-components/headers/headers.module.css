@@ -1,0 +1,19 @@
+.primary_header {
+  font-size: var(--font-lg);
+}
+
+.secondary_header {
+  font-size: var(--font-md);
+}
+
+.primary_header,
+.secondary_header {
+  font-weight: var(--font-bold);
+  text-transform: capitalize;
+}
+
+.header_text {
+  font-size: var(--font);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
