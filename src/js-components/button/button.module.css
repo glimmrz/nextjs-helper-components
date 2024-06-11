@@ -7,10 +7,14 @@
 
   display: flex;
   align-items: center;
+  gap: var(--gap);
 
   cursor: pointer;
   transition: border-color var(--transition-duration)
-    var(--transition-timing-function);
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 .ghost {
@@ -19,4 +23,14 @@
 
 .ghost:hover {
   border-color: var(--color-font);
+}
+
+.destructive {
+  color: red;
+  border-color: red;
+}
+
+.destructive:hover {
+  color: white;
+  background-color: red;
 }

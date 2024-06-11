@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <CartSidebar />
       <div>
-        <h1>Other content</h1>
+        <h1></h1>
       </div>
     </main>
   );

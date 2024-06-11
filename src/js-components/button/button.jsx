@@ -5,8 +5,9 @@ export function Button({
   label,
   buttonType = "button",
   buttonAriaLabel,
-  variant,
+  variant = "primary",
   buttonIcon,
+  buttonIconSize,
   onClick,
 }) {
   const variants = {
@@ -14,6 +15,7 @@ export function Button({
       primary: styles.primary,
       secondary: styles.secondary,
       ghost: styles.ghost,
+      destructive: styles.destructive,
     },
   };
 
@@ -25,7 +27,7 @@ export function Button({
       onClick={onClick}
     >
       {label && <span>{label}</span>}
-      {buttonIcon && <Icon icon={buttonIcon} />}
+      {buttonIcon && <Icon icon={buttonIcon} iconSize={buttonIconSize} />}
     </button>
   );
 }
