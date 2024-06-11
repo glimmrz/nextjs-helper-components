@@ -1,15 +1,10 @@
 import styles from "./sidebar.module.css";
 import { Container } from "../container/container";
 import { Headers } from "../headers/headers";
-import { Icon } from "../icon/icon";
+import { Button } from "../button/button";
+import { X } from "lucide-react";
 
-export function Sidebar({
-  children,
-  footer,
-  sidebarHeader,
-  headerText,
-  headerIcon,
-}) {
+export function Sidebar({ children, footer, sidebarHeader, headerText }) {
   return (
     <aside>
       <div className={styles.wrapper}>
@@ -17,7 +12,11 @@ export function Sidebar({
           <Container>
             <div className={styles.header_wrapper}>
               <Headers primaryHeader={sidebarHeader} headerText={headerText} />
-              <Icon icon={headerIcon} />
+              <Button
+                buttonIcon={X}
+                variant="ghost"
+                buttonAriaLabel="close sidebar"
+              />
             </div>
           </Container>
         </header>

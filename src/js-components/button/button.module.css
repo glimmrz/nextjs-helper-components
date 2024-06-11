@@ -1,0 +1,22 @@
+.button {
+  padding: calc(var(--padding) * 0.5) var(--padding);
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  outline: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.ghost {
+  border-color: var(--color-mute);
+}
+
+.ghost:hover {
+  border-color: var(--color-font);
+}

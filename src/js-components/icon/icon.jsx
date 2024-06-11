@@ -1,7 +1,7 @@
-export function Icon({ icon }) {
+export function Icon({ icon, iconSize = 24 }) {
   const CurrentIcon = icon;
 
   if (!icon) return null;
 
-  return <CurrentIcon />;
+  return <CurrentIcon size={iconSize} />;
 }
