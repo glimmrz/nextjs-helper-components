@@ -18,6 +18,7 @@
 }
 
 .details {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -34,17 +35,19 @@
   overflow: hidden;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--gap);
-}
-
 .quantity {
   width: fit-content;
   display: flex;
   align-items: center;
   border: 1px solid var(--color-mute);
   border-radius: var(--radius);
+}
+
+.remove_btn {
+  height: fit-content;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }

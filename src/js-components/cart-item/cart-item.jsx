@@ -22,16 +22,18 @@ export function CartItem() {
           <div className={styles.details}>
             <h3 className={styles.title}>Product Name</h3>
             <p className={styles.price}>$100 x 7</p>
-            <div className={styles.buttons}>
-              <div className={styles.quantity}>
-                <Button buttonIcon={Plus} buttonIconSize={16} />
-                <span>1</span>
-                <Button buttonIcon={Minus} buttonIconSize={16} />
-              </div>
+
+            <div className={styles.quantity}>
+              <Button buttonIcon={Plus} buttonIconSize={16} />
+              <span>1</span>
+              <Button buttonIcon={Minus} buttonIconSize={16} />
+            </div>
+            <div className={styles.remove_btn}>
               <Button
                 buttonIcon={X}
                 variant="destructive"
                 buttonIconSize={16}
+                buttonAriaLabel="remove item from cart"
               />
             </div>
           </div>

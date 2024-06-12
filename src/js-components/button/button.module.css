@@ -26,11 +26,12 @@
 }
 
 .destructive {
+  padding: calc(var(--padding) / 2);
+  border-radius: 50%;
   color: red;
-  border-color: red;
 }
 
 .destructive:hover {
-  color: white;
   background-color: red;
+  color: white;
 }

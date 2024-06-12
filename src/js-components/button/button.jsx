@@ -8,6 +8,7 @@ export function Button({
   variant = "primary",
   buttonIcon,
   buttonIconSize,
+  buttonIconColor,
   onClick,
 }) {
   const variants = {
@@ -27,7 +28,13 @@ export function Button({
       onClick={onClick}
     >
       {label && <span>{label}</span>}
-      {buttonIcon && <Icon icon={buttonIcon} iconSize={buttonIconSize} />}
+      {buttonIcon && (
+        <Icon
+          icon={buttonIcon}
+          iconSize={buttonIconSize}
+          iconColor={buttonIconColor}
+        />
+      )}
     </button>
   );
 }
